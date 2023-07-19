@@ -28,10 +28,11 @@ Widget secondPageBar(BuildContext context) {
         margin: EdgeInsets.only(left: 84.w),
         child: Text("Car Care",
             style: TextStyle(
-                fontFamily: GoogleFonts.workSans().fontFamily,
-                color: const Color(0xFF010000),
-                fontSize: 18.sp,
-                fontWeight: FontWeight.bold)),
+              fontFamily: 'WorkSans',
+              fontWeight: FontWeight.w900,
+              color: const Color(0xFF010000),
+              fontSize: 18.sp,
+            )),
       )
     ],
   );

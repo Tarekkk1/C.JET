@@ -24,8 +24,8 @@ Widget maincontainer(BuildContext context, String text, int days, int cost) {
         textAlign: TextAlign.left,
         style: TextStyle(
           fontSize: 20.sp,
-          fontWeight: FontWeight.bold,
-          fontFamily: GoogleFonts.workSans().fontFamily,
+          fontFamily: 'WorkSans',
+          fontWeight: FontWeight.w900,
         ),
       ),
       SizedBox(
@@ -36,7 +36,8 @@ Widget maincontainer(BuildContext context, String text, int days, int cost) {
         style: TextStyle(
           color: Colors.grey,
           fontSize: 16.sp,
-          fontFamily: GoogleFonts.workSans().fontFamily,
+          fontFamily: 'WorkSans',
+          fontWeight: FontWeight.w500,
         ),
       ),
       SizedBox(
@@ -49,7 +50,8 @@ Widget maincontainer(BuildContext context, String text, int days, int cost) {
             style: TextStyle(
               color: Colors.black,
               fontSize: 12.sp,
-              fontFamily: GoogleFonts.workSans().fontFamily,
+              fontFamily: 'WorkSans',
+              fontWeight: FontWeight.w400,
             ),
           ),
           const Spacer(),

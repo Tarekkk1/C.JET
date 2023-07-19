@@ -7,7 +7,11 @@ Widget paymentRow(
     mainAxisAlignment: MainAxisAlignment.start,
     children: [
       Text(title,
-          style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.w500)),
+          style: TextStyle(
+            fontSize: 14.sp,
+            fontFamily: 'WorkSans',
+            fontWeight: FontWeight.w700,
+          )),
       const Spacer(),
       Text("($value)"),
       SizedBox(

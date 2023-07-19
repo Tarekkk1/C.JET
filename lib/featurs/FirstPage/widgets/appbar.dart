@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 Widget appbarwidget(BuildContext context) {
   return Container(
@@ -33,10 +32,10 @@ Widget appbarwidget(BuildContext context) {
             child: Text(
               'Services',
               style: TextStyle(
-                fontFamily: GoogleFonts.workSans().fontFamily,
+                fontFamily: 'WorkSans',
+                fontWeight: FontWeight.w900,
                 color: Colors.black,
                 fontSize: 18.sp,
-                fontWeight: FontWeight.bold,
               ),
             ),
           ),

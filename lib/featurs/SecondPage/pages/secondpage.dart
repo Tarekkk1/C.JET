@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:cjet/core/utils/iamges.dart';
 import 'package:cjet/featurs/SecondPage/widgets/rows.dart';
 import 'package:cjet/featurs/SecondPage/widgets/secondpagebar.dart';
@@ -64,14 +62,14 @@ class _SecondPageState extends State<SecondPage> {
                         Text(
                           "Current Working Hours: 9 PM - 7 AM",
                           style: TextStyle(
-                            fontFamily: GoogleFonts.workSans().fontFamily,
+                            fontFamily: 'WorkSans',
+                            fontWeight: FontWeight.w500,
                             color: const Color(0xFF010000),
-                            fontWeight: FontWeight.normal,
                             fontSize: 14.sp,
                           ),
                         ),
                         SizedBox(
-                          width: 25.w,
+                          width: 40.w,
                         ),
                         const Icon(
                           Icons.info_outline_rounded,
@@ -96,10 +94,10 @@ class _SecondPageState extends State<SecondPage> {
                     child: Text(
                       "What's included",
                       style: TextStyle(
-                        fontFamily: GoogleFonts.workSans().fontFamily,
+                        fontFamily: 'WorkSans',
+                        fontWeight: FontWeight.w800,
                         color: const Color(0xFF010000),
                         fontSize: 14.sp,
-                        fontWeight: FontWeight.bold,
                       ),
                     ),
                   ),
@@ -140,10 +138,10 @@ class _SecondPageState extends State<SecondPage> {
                     child: Text(
                       "Select Part to wash:",
                       style: TextStyle(
-                        fontFamily: GoogleFonts.workSans().fontFamily,
+                        fontFamily: 'WorkSans',
+                        fontWeight: FontWeight.w800,
                         color: const Color(0xFF010000),
                         fontSize: 14.sp,
-                        fontWeight: FontWeight.bold,
                       ),
                     ),
                   ),
@@ -155,10 +153,10 @@ class _SecondPageState extends State<SecondPage> {
                     child: Text(
                       "(Min. 1 - Max. 3)",
                       style: TextStyle(
-                        fontFamily: GoogleFonts.workSans().fontFamily,
+                        fontFamily: 'WorkSans',
+                        fontWeight: FontWeight.w500,
                         color: const Color(0xFF9397A0),
                         fontSize: 10.sp,
-                        fontWeight: FontWeight.normal,
                       ),
                     ),
                   ),
@@ -233,7 +231,8 @@ class _SecondPageState extends State<SecondPage> {
                             style: TextStyle(
                               color: const Color(0xFF010000),
                               fontSize: 18.sp,
-                              fontWeight: FontWeight.bold,
+                              fontFamily: 'WorkSans',
+                              fontWeight: FontWeight.w800,
                             )),
                       ),
                     ),

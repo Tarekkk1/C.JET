@@ -15,8 +15,8 @@ Widget addtocart() {
         style: TextStyle(
           color: Colors.black,
           fontSize: 16.sp,
-          fontWeight: FontWeight.w500,
-          fontFamily: GoogleFonts.workSans().fontFamily,
+          fontFamily: 'WorkSans',
+          fontWeight: FontWeight.w600,
         ),
       ),
     ),

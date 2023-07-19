@@ -15,8 +15,8 @@ Widget subscribe() {
         style: TextStyle(
           color: Colors.black,
           fontSize: 12.sp,
+          fontFamily: 'WorkSans',
           fontWeight: FontWeight.w500,
-          fontFamily: GoogleFonts.workSans().fontFamily,
         ),
       ),
     ),

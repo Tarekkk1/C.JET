@@ -19,7 +19,8 @@ Widget rows(BuildContext context) {
             style: TextStyle(
               color: const Color(0xFF010000),
               fontSize: 12.sp,
-              fontFamily: GoogleFonts.workSans().fontFamily,
+              fontFamily: 'WorkSans',
+              fontWeight: FontWeight.w500,
             ),
           ),
         ),

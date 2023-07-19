@@ -18,8 +18,8 @@ Widget selectedItems(
               style: TextStyle(
                 color: index != selectedindex ? Colors.black : Colors.white,
                 fontSize: 16.sp,
-                fontWeight: FontWeight.bold,
-                fontFamily: GoogleFonts.workSans().fontFamily,
+                fontFamily: 'WorkSans',
+                fontWeight: FontWeight.w400,
               ),
             ),
           ),

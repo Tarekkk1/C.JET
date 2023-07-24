@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 Widget selectedItems(
     BuildContext context, int index, int selectedindex, String text1) {
@@ -8,7 +7,9 @@ Widget selectedItems(
     child: Container(
         width: 122.w,
         decoration: BoxDecoration(
-          color: index != selectedindex ? Colors.white : Colors.blueAccent,
+          color: index != selectedindex
+              ? Colors.white
+              : const Color.fromARGB(255, 23, 79, 176),
           borderRadius: BorderRadius.circular(16.r),
         ),
         child: Expanded(

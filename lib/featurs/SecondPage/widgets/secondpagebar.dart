@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 Widget secondPageBar(BuildContext context) {
-  return Row(
+  return Stack(
     children: [
       Container(
         decoration: BoxDecoration(
@@ -24,9 +24,8 @@ Widget secondPageBar(BuildContext context) {
           },
         ),
       ),
-      Container(
-        margin: EdgeInsets.only(left: 84.w),
-        child: Text("Car Care",
+      Center(
+        child: Text(AppLocalizations.of(context)!.carCare,
             style: TextStyle(
               fontFamily: 'WorkSans',
               fontWeight: FontWeight.w900,

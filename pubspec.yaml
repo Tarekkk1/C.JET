@@ -9,6 +9,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: any
   cupertino_icons: ^1.0.2
   flutter_screenutil: ^5.8.4
   google_fonts: ^5.1.0  
@@ -20,16 +23,17 @@ dev_dependencies:
   flutter_lints: ^2.0.0
 
 flutter:
+  generate: true 
   uses-material-design: true
 
   assets:
     - assets/images/
   fonts:
-    - family: WorkSans
-      fonts:
-        
-        - asset: fonts/worksans/WorkSans-Medium.ttf
-        - asset: fonts/worksans/WorkSans-Regular.ttf
-        - asset: fonts/worksans/WorkSans-Bold.ttf
-          weight: 900
+  - family: WorkSans
+    fonts:
+      - asset: assets/fonts/worksans/WorkSans-Medium.ttf
+      - asset: assets/fonts/worksans/WorkSans-Regular.ttf
+      - asset: assets/fonts/worksans/WorkSans-Bold.ttf
+        weight: 900
+
  

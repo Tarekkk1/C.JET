@@ -170,22 +170,19 @@ class _SecondPageState extends State<SecondPage> {
                       borderRadius: BorderRadius.all(Radius.circular(12.r)),
                       color: const Color(0xFFFFFFFF),
                     ),
-                    child: Expanded(
-                      child: ListView.separated(
-                          physics: const NeverScrollableScrollPhysics(),
-                          shrinkWrap: true,
-                          itemBuilder: (context, index) => InkWell(
-                              onTap: () => {HandelSelection(index)},
-                              child: paymentRow(context, "Carpet", "EGP 100",
-                                  selectedItems.contains(index))),
-                          separatorBuilder: (context, index) => Container(
-                                height: 1.h,
-                                margin:
-                                    EdgeInsets.only(top: 20.h, bottom: 20.h),
-                                color: Colors.grey[300],
-                              ),
-                          itemCount: 8),
-                    ),
+                    child: ListView.separated(
+                        physics: const NeverScrollableScrollPhysics(),
+                        shrinkWrap: true,
+                        itemBuilder: (context, index) => InkWell(
+                            onTap: () => {HandelSelection(index)},
+                            child: paymentRow(context, "Carpet", "EGP 100",
+                                selectedItems.contains(index))),
+                        separatorBuilder: (context, index) => Container(
+                              height: 1.h,
+                              margin: EdgeInsets.only(top: 20.h, bottom: 20.h),
+                              color: Colors.grey[300],
+                            ),
+                        itemCount: 8),
                   ),
                 ])),
               ),

@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 Widget appbarwidget(BuildContext context) {
   return Container(
-    color: const Color.fromARGB(0, 0, 0, 0),
     margin: EdgeInsets.only(top: 76.h, bottom: 24.h),
-    child: Row(
+    child: Stack(
       children: [
         Container(
           decoration: BoxDecoration(
+            color: const Color.fromARGB(145, 255, 255, 255),
             borderRadius: BorderRadius.circular(42.r),
-            color: const Color(0x0ff10000),
             border: Border.all(
-              color: const Color(0xFFFFFFD6),
+              color: const Color.fromARGB(255, 228, 228, 209),
               width: 1.w,
             ),
           ),
@@ -27,16 +27,13 @@ Widget appbarwidget(BuildContext context) {
           ),
         ),
         Center(
-          child: Container(
-            margin: EdgeInsets.only(left: 84.w),
-            child: Text(
-              'Services',
-              style: TextStyle(
-                fontFamily: 'WorkSans',
-                fontWeight: FontWeight.w900,
-                color: Colors.black,
-                fontSize: 18.sp,
-              ),
+          child: Text(
+            AppLocalizations.of(context)!.services,
+            style: TextStyle(
+              fontFamily: 'WorkSans',
+              fontWeight: FontWeight.w900,
+              color: Colors.black,
+              fontSize: 18.sp,
             ),
           ),
         ),

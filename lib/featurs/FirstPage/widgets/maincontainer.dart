@@ -1,7 +1,6 @@
 import 'package:cjet/featurs/FirstPage/widgets/subscribe.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 Widget maincontainer(BuildContext context, String text, int days, int cost) {
   return Container(
@@ -55,11 +54,15 @@ Widget maincontainer(BuildContext context, String text, int days, int cost) {
             ),
           ),
           const Spacer(),
-          InkWell(
-              onTap: () {
-                Navigator.pushNamed(context, '/secondpage');
-              },
-              child: subscribe())
+          SizedBox(
+            height: 30.h,
+            width: 92.w,
+            child: InkWell(
+                onTap: () {
+                  Navigator.pushNamed(context, '/secondpage');
+                },
+                child: subscribe()),
+          )
         ],
       ),
     ]),

@@ -47,22 +47,21 @@ class _FirstPageState extends State<FirstPage> {
                 ),
                 SizedBox(
                   height: 31.h,
-                  child: Expanded(
-                    child: ListView.builder(
-                      scrollDirection: Axis.horizontal,
-                      itemCount: 10,
-                      itemBuilder: (BuildContext context, int index) {
-                        return Container(
-                          margin: EdgeInsets.only(right: 18.w),
-                          child: InkWell(
-                              onTap: () {
-                                handleSelection(index);
-                              },
-                              child: selectedItems(context, index,
-                                  selectedItemIndex, "Packages")),
-                        );
-                      },
-                    ),
+                  child: ListView.builder(
+                    shrinkWrap: true,
+                    scrollDirection: Axis.horizontal,
+                    itemCount: 10,
+                    itemBuilder: (BuildContext context, int index) {
+                      return Container(
+                        margin: EdgeInsets.only(right: 18.w),
+                        child: InkWell(
+                            onTap: () {
+                              handleSelection(index);
+                            },
+                            child: selectedItems(
+                                context, index, selectedItemIndex, "Packages")),
+                      );
+                    },
                   ),
                 ),
                 SizedBox(

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../featurs/FirstPage/pages/firstpage.dart';
+import '../../featurs/FirstPage/presentaion/pages/firstpage.dart';
 import '../../featurs/SecondPage/pages/secondpage.dart';
 
 class Routes {

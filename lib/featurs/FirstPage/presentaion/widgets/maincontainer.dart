@@ -1,8 +1,10 @@
-import 'package:cjet/featurs/FirstPage/widgets/subscribe.dart';
+import 'package:cjet/featurs/FirstPage/presentaion/widgets/subscribe.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-Widget maincontainer(BuildContext context, String text, int days, int cost) {
+import '../../data/models/servicesModel.dart';
+
+Widget maincontainer(BuildContext context, Services services) {
   return Container(
     decoration: BoxDecoration(
       color: Colors.white,
@@ -19,7 +21,7 @@ Widget maincontainer(BuildContext context, String text, int days, int cost) {
     padding: EdgeInsets.only(right: 12.w, left: 12.w, top: 18.h, bottom: 18.h),
     child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
       Text(
-        text,
+        services.title!,
         textAlign: TextAlign.left,
         style: TextStyle(
           fontSize: 20.sp,
@@ -31,7 +33,7 @@ Widget maincontainer(BuildContext context, String text, int days, int cost) {
         height: 6.h,
       ),
       Text(
-        "Glem Car wash $days days per week",
+        services.shortDescription!,
         style: TextStyle(
           color: Colors.grey,
           fontSize: 16.sp,
@@ -45,7 +47,7 @@ Widget maincontainer(BuildContext context, String text, int days, int cost) {
       Row(
         children: [
           Text(
-            "$cost EGP / Month",
+            "${services.priceString!} EGP / Month",
             style: TextStyle(
               color: Colors.black,
               fontSize: 12.sp,
@@ -59,7 +61,7 @@ Widget maincontainer(BuildContext context, String text, int days, int cost) {
             width: 92.w,
             child: InkWell(
                 onTap: () {
-                  Navigator.pushNamed(context, '/secondpage');
+                  // Navigator.pushNamed(context, '/secondpage');
                 },
                 child: subscribe()),
           )

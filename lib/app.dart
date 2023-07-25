@@ -20,7 +20,7 @@ class HomePage extends StatelessWidget {
         Locale('en'),
         Locale('ar'),
       ],
-      locale: const Locale('ar'),
+      locale: const Locale('en'),
       initialRoute: "/",
       debugShowCheckedModeBanner: false,
       onGenerateRoute: (settings) => AppRoutes.onGenerate(settings),

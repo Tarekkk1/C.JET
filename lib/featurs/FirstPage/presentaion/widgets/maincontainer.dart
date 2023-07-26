@@ -61,7 +61,8 @@ Widget maincontainer(BuildContext context, Services services) {
             width: 92.w,
             child: InkWell(
                 onTap: () {
-                  // Navigator.pushNamed(context, '/secondpage');
+                  Navigator.pushNamed(context, '/secondpage',
+                      arguments: services);
                 },
                 child: subscribe()),
           )

@@ -69,7 +69,7 @@ class _FirstPageState extends State<FirstPage> {
                         margin: EdgeInsetsDirectional.only(bottom: 29.h),
                         color: Colors.grey[300],
                       ),
-                      if (state is ServicesMangerLoading)
+                      if (state is! ServicesMangerLoaded)
                         const Center(
                           child: CircularProgressIndicator(),
                         ),

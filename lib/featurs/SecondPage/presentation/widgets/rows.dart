@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-Widget rows(BuildContext context) {
+Widget rows(BuildContext context, String text) {
   return Container(
     alignment: Alignment.centerLeft,
     child: Row(
@@ -14,7 +14,7 @@ Widget rows(BuildContext context) {
         Container(
           margin: EdgeInsets.only(left: 12.w),
           child: Text(
-            "Thorough vacuuming debris and dirt",
+            text,
             style: TextStyle(
               color: const Color(0xFF010000),
               fontSize: 12.sp,

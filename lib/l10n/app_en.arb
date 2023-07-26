@@ -1,5 +1,8 @@
 {
   "services": "Services",
-  "carCare": "Car Care"
+  "carCare": "Car Care",
+  "selectparttowatch":"Select Part to wash:",
+  "minmax":"(Min. 1 - Max. 3)",
+  "subtotal":" Subtotal"
 
 }

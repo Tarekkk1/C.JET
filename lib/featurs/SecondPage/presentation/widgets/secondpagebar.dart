@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
-Widget secondPageBar(BuildContext context) {
+Widget secondPageBar(BuildContext context, String se) {
   return Stack(
     children: [
       Container(
@@ -25,7 +25,7 @@ Widget secondPageBar(BuildContext context) {
         ),
       ),
       Center(
-        child: Text(AppLocalizations.of(context)!.carCare,
+        child: Text(se,
             style: TextStyle(
               fontFamily: 'WorkSans',
               fontWeight: FontWeight.w900,

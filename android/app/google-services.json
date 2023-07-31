@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "411023817970",
+    "project_id": "cjet-80d45",
+    "storage_bucket": "cjet-80d45.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:411023817970:android:8feb77a2870b8c1770246b",
+        "android_client_info": {
+          "package_name": "com.example.cjet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "411023817970-83kcho06qaili4jdr6v43vr74dskl6ee.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6IbFUXsrAmJYVDYEyLraak6DaxwOxoHA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "411023817970-83kcho06qaili4jdr6v43vr74dskl6ee.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
